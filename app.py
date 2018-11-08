@@ -1,7 +1,6 @@
 from flask import Flask, render_template, session, request, redirect, url_for, flash
 from werkzeug.utils import secure_filename
 import requests, json, jalali, datetime, os
-import bcrypt
 
 app = Flask(__name__, static_url_path='/static')
 app.secret_key = 'any random string'
@@ -308,4 +307,4 @@ def remove_stock(id):
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=False)
