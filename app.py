@@ -138,10 +138,10 @@ def projects():
     if session.get('logged_in', None):
         r = requests.get(BASE_URL + "/banner/all")
         result = json.loads(r.text)
-        print(result['data']['banners'])
+
         if result['status'] == 'ok':
             if result['data']['banners']:
-                return render_template('projectsPage.html', data=result['data']['banners'], base_url=BASE_URL)
+                return render_template('projectsPage.html', data=result['data']['banners'], base_url="http://89.163.157.7:8080")
             else:
                 return render_template('projectsPage.html')
 
@@ -161,7 +161,7 @@ def submit_project():
 
                 if photo.filename == '':
                     flash('fail')
-                    return redirect(request.url)
+                    return redirect(url_for('projects'))
                 if photo and allowed_file(photo.filename):
                     filename = secure_filename(photo.filename)
                     photo.save('images/'+filename)
@@ -183,7 +183,7 @@ def submit_project():
                 pass  # failed
 
         flash('fail')
-        return redirect(request.url)
+        return redirect(url_for('projects'))
     return render_template('loginPage.html')
 
 
