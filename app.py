@@ -8,6 +8,7 @@ BASE_URL = "http://mcalendar:8080"
 UPLOAD_FOLDER = '/Users/hamed/Desktop'
 ALLOWED_EXTENSIONS = {'png', 'jpg', 'jpeg'}
 
+
 def allowed_file(filename):
     return '.' in filename and \
            filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
@@ -141,7 +142,8 @@ def projects():
 
         if result['status'] == 'ok':
             if result['data']['banners']:
-                return render_template('projectsPage.html', data=result['data']['banners'], base_url="http://89.163.157.7:8080")
+                return render_template('projectsPage.html', data=result['data']['banners'],
+                                       base_url="http://moallemcalendar.ir:8080")
             else:
                 return render_template('projectsPage.html')
 
@@ -164,15 +166,15 @@ def submit_project():
                     return redirect(url_for('projects'))
                 if photo and allowed_file(photo.filename):
                     filename = secure_filename(photo.filename)
-                    photo.save('images/'+filename)
-                    f = open('images/'+filename, 'rb')
+                    photo.save('images/' + filename)
+                    f = open('images/' + filename, 'rb')
 
                     r = requests.post(BASE_URL + "/admin/banner/add",
                                       files={'file': f},
                                       data={'title': title, 'link': url},
                                       headers={"Authorization": session['logged_in']})
                     f.close()
-                    os.remove('images/'+filename)
+                    os.remove('images/' + filename)
                     result = json.loads(r.text)
 
                     if result['status'] == 'ok':
@@ -204,6 +206,121 @@ def remove_project(id):
 
         flash('fail')
         return redirect(url_for('projects'))
+
+    return render_template('loginPage.html')
+
+
+@app.route('/news')
+def news():
+    if session.get('logged_in', None):
+        r = requests.get(BASE_URL + "/news/all")
+        result = json.loads(r.text)
+
+        if result['status'] == 'ok':
+            if result['data']['news']:
+                return render_template('newsPage.html', data=result['data']['news'],
+                                       base_url="http://moallemcalendar.ir:8080")
+            else:
+                return render_template('newsPage.html')
+
+        flash("fail")
+        return redirect(url_for('news'))
+    return render_template('loginPage.html')
+
+
+@app.route('/submit/news', methods=['POST'])
+def submit_news():
+    if session.get('logged_in', None):
+        if request.method == "POST":
+            try:
+                title = request.form['title']
+                content = request.form['content']
+                photo = request.files['photo']
+
+                if photo.filename == '':
+                    flash('fail')
+                    return redirect(url_for('news'))
+                if photo and allowed_file(photo.filename):
+                    filename = secure_filename(photo.filename)
+                    photo.save('images/' + filename)
+                    f = open('images/' + filename, 'rb')
+
+                    r = requests.post(BASE_URL + "/admin/news/add",
+                                      files={'file': f},
+                                      data={'title': title, 'content': content},
+                                      headers={"Authorization": session['logged_in']})
+                    f.close()
+                    os.remove('images/' + filename)
+                    result = json.loads(r.text)
+
+                    if result['status'] == 'ok':
+                        flash('success')
+                        return redirect(url_for('news'))
+
+            except Exception as err:
+                pass  # failed
+
+        flash('fail')
+        return redirect(url_for('news'))
+    return render_template('loginPage.html')
+
+
+@app.route('/edit/news/<id>', methods=['POST'])
+def edit_news(id):
+    if session.get('logged_in', None):
+        if request.method == "POST":
+            try:
+                title = request.form['title']
+                content = request.form['content']
+
+                if title or content:
+                    if title and content:
+                        r = requests.post(BASE_URL + "/admin/news/update",
+                                  data={'news_id': id, 'title': title, 'content': content},
+                                  headers={"Authorization": session['logged_in']})
+                    elif title:
+                        r = requests.post(BASE_URL + "/admin/news/update",
+                                  data={'news_id': id, 'title': title},
+                                  headers={"Authorization": session['logged_in']})
+                    else:
+                        r = requests.post(BASE_URL + "/admin/news/update",
+                                  data={'news_id': id, 'content': content},
+                                  headers={"Authorization": session['logged_in']})
+                else:
+                    flash('success')
+                    return redirect(url_for('news'))
+
+                result = json.loads(r.text)
+
+                if result['status'] == 'ok':
+                    flash('success')
+                    return redirect(url_for('news'))
+
+            except Exception as err:
+                pass  # failed
+
+        flash('fail')
+        return redirect(url_for('news'))
+    return render_template('loginPage.html')
+
+
+@app.route('/remove/news/<id>')
+def remove_news(id):
+    if session.get('logged_in', None):
+        try:
+            r = requests.post(BASE_URL + "/admin/news/delete",
+                              data={'news_id': id},
+                              headers={"Authorization": session['logged_in']})
+            result = json.loads(r.text)
+
+            if result['status'] == 'ok':
+                flash('success')
+                return redirect(url_for('news'))
+        except:
+            pass
+
+        flash('fail')
+        return redirect(url_for('news'))
 
     return render_template('loginPage.html')
 
