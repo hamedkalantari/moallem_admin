@@ -4,7 +4,7 @@ import requests, json, jalali, datetime, os
 
 app = Flask(__name__, static_url_path='/static')
 app.secret_key = '@#$%ffsadf#f qfq$#q'
-BASE_URL = "http://mcalendar:8080"
+BASE_URL = "http://moallemcalendar.ir:8080"
 UPLOAD_FOLDER = '/Users/hamed/Desktop'
 ALLOWED_EXTENSIONS = {'png', 'jpg', 'jpeg'}
 
@@ -84,7 +84,6 @@ def login():
         try:
             username = request.form['username']
             password = request.form['password']
-            print(BASE_URL + "/login", data={'username': username, 'password': password, 'fcm_token': '0'})
             r = requests.post(BASE_URL + "/login", data={'username': username, 'password': password, 'fcm_token': '0'})
             result = json.loads(r.text)
 
