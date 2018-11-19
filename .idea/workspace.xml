@@ -4,11 +4,8 @@
     <list default="true" id="244bdcdd-ff37-46df-9016-aaa038857128" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/eventsPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/eventsPage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/newsPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/newsPage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/notificationPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/notificationPage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/projectsPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/projectsPage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/stocksPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/stocksPage.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,7 +15,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/moallem_admin$panel_admin.coverage" NAME="panel_admin Coverage Results" MODIFIED="1542143587096" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/moallem_admin$panel_admin.coverage" NAME="panel_admin Coverage Results" MODIFIED="1542653386782" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/panel_admin$panel_admin.coverage" NAME="panel_admin Coverage Results" MODIFIED="1541505408668" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
   <component name="FUSProjectUsageTrigger">
@@ -60,52 +57,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="app.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="app.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="20" column="44" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
+            <state relative-caret-position="72">
+              <caret line="6" column="33" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
               <folding>
-                <element signature="e#760#2692#0" />
-                <element signature="e#2754#3307#0" />
-                <element signature="e#7688#8234#0" />
+                <element signature="e#769#2701#0" />
+                <element signature="e#2763#3316#0" />
+                <element signature="e#3382#3936#0" />
+                <element signature="e#3979#4085#0" />
+                <element signature="e#4940#5506#0" />
+                <element signature="e#5583#6924#0" />
+                <element signature="e#5688#6742#0" />
+                <element signature="e#12450#13340#0" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="newsPage.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/newsPage.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="62" column="65" lean-forward="true" selection-start-line="62" selection-start-column="65" selection-end-line="62" selection-end-column="65" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="projectsPage.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/projectsPage.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="67" column="53" selection-start-line="67" selection-start-column="53" selection-end-line="67" selection-end-column="53" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="loginPage.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/loginPage.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="888">
-              <caret line="191" column="43" selection-start-line="191" selection-start-column="43" selection-end-line="191" selection-end-column="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="stocksPage.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/stocksPage.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="181">
-              <caret line="67" column="53" selection-start-line="67" selection-start-column="53" selection-end-line="67" selection-end-column="53" />
             </state>
           </provider>
         </entry>
@@ -113,8 +79,26 @@
       <file leaf-file-name="notificationPage.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/notificationPage.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="467">
+            <state relative-caret-position="755">
+              <caret line="135" column="108" selection-start-line="135" selection-start-column="108" selection-end-line="135" selection-end-column="108" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="eventsPage.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/eventsPage.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1165">
               <caret line="67" column="53" selection-start-line="67" selection-start-column="53" selection-end-line="67" selection-end-column="53" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="projectsPage.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/projectsPage.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="121" selection-start-line="121" selection-end-line="146" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -143,11 +127,11 @@
         <option value="$PROJECT_DIR$/static/css/fontiran.css" />
         <option value="$PROJECT_DIR$/templates/loginPage.html" />
         <option value="$PROJECT_DIR$/templates/eventsPage.html" />
-        <option value="$PROJECT_DIR$/templates/notificationPage.html" />
-        <option value="$PROJECT_DIR$/templates/projectsPage.html" />
         <option value="$PROJECT_DIR$/templates/stocksPage.html" />
-        <option value="$PROJECT_DIR$/app.py" />
         <option value="$PROJECT_DIR$/templates/newsPage.html" />
+        <option value="$PROJECT_DIR$/templates/projectsPage.html" />
+        <option value="$PROJECT_DIR$/templates/notificationPage.html" />
+        <option value="$PROJECT_DIR$/app.py" />
       </list>
     </option>
   </component>
@@ -160,17 +144,16 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="y" value="22" />
     <option name="width" value="1440" />
-    <option name="height" value="816" />
+    <option name="height" value="813" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -187,6 +170,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -243,7 +227,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1440" height="814" extended-state="6" />
+    <frame x="0" y="22" width="1440" height="813" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -251,9 +235,9 @@
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.31293464" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.31284916" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32848486" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28183118" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28540772" />
       <window_info anchor="right" id="R Packages" order="3" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="R Graphics" order="3" />
@@ -286,12 +270,74 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app.py">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="20" column="44" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
+          <folding>
+            <element signature="e#769#2701#0" />
+            <element signature="e#2763#3316#0" />
+            <element signature="e#3382#3936#0" />
+            <element signature="e#3979#4085#0" />
+            <element signature="e#4940#5506#0" />
+            <element signature="e#5583#6924#0" />
+            <element signature="e#5688#6742#0" />
+            <element signature="e#12450#13340#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/projectsPage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1206">
+          <caret line="67" column="53" selection-start-line="67" selection-start-column="53" selection-end-line="67" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/loginPage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3438">
+          <caret line="191" column="43" selection-start-line="191" selection-start-column="43" selection-end-line="191" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/stocksPage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1206">
+          <caret line="67" column="53" selection-start-line="67" selection-start-column="53" selection-end-line="67" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/notificationPage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1206">
+          <caret line="67" column="53" selection-start-line="67" selection-start-column="53" selection-end-line="67" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/newsPage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1116">
+          <caret line="62" column="65" lean-forward="true" selection-start-line="62" selection-start-column="65" selection-end-line="62" selection-end-column="65" />
+          <folding>
+            <element signature="e#2501#2508#1#HTML" expanded="true" />
+            <element signature="e#2895#2902#1#HTML" expanded="true" />
+            <element signature="e#7144#7151#1#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.py">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4914">
           <caret line="273" column="47" selection-start-line="273" selection-start-column="47" selection-end-line="273" selection-end-column="47" />
           <folding>
-            <element signature="e#760#2692#0" />
-            <element signature="e#2754#3307#0" />
-            <element signature="e#7688#8234#0" />
+            <element signature="e#769#2701#0" />
+            <element signature="e#2763#3316#0" />
+            <element signature="e#3382#3936#0" />
+            <element signature="e#3979#4085#0" />
+            <element signature="e#4940#5506#0" />
+            <element signature="e#5583#6924#0" />
+            <element signature="e#5688#6742#0" />
+            <element signature="e#12450#13340#0" />
           </folding>
         </state>
       </provider>
@@ -329,9 +375,14 @@
         <state relative-caret-position="4914">
           <caret line="273" column="47" selection-start-line="273" selection-start-column="47" selection-end-line="273" selection-end-column="47" />
           <folding>
-            <element signature="e#760#2692#0" />
-            <element signature="e#2754#3307#0" />
-            <element signature="e#7688#8234#0" />
+            <element signature="e#769#2701#0" />
+            <element signature="e#2763#3316#0" />
+            <element signature="e#3382#3936#0" />
+            <element signature="e#3979#4085#0" />
+            <element signature="e#4940#5506#0" />
+            <element signature="e#5583#6924#0" />
+            <element signature="e#5688#6742#0" />
+            <element signature="e#12450#13340#0" />
           </folding>
         </state>
       </provider>
@@ -369,9 +420,14 @@
         <state relative-caret-position="4626">
           <caret line="273" column="47" selection-start-line="273" selection-start-column="47" selection-end-line="273" selection-end-column="47" />
           <folding>
-            <element signature="e#760#2692#0" />
-            <element signature="e#2754#3307#0" />
-            <element signature="e#7688#8234#0" />
+            <element signature="e#769#2701#0" />
+            <element signature="e#2763#3316#0" />
+            <element signature="e#3382#3936#0" />
+            <element signature="e#3979#4085#0" />
+            <element signature="e#4940#5506#0" />
+            <element signature="e#5583#6924#0" />
+            <element signature="e#5688#6742#0" />
+            <element signature="e#12450#13340#0" />
           </folding>
         </state>
       </provider>
@@ -409,9 +465,14 @@
         <state relative-caret-position="4698">
           <caret line="263" column="19" selection-start-line="263" selection-start-column="19" selection-end-line="263" selection-end-column="19" />
           <folding>
-            <element signature="e#760#2692#0" />
-            <element signature="e#2754#3307#0" />
-            <element signature="e#7688#8234#0" />
+            <element signature="e#769#2701#0" />
+            <element signature="e#2763#3316#0" />
+            <element signature="e#3382#3936#0" />
+            <element signature="e#3979#4085#0" />
+            <element signature="e#4940#5506#0" />
+            <element signature="e#5583#6924#0" />
+            <element signature="e#5688#6742#0" />
+            <element signature="e#12450#13340#0" />
           </folding>
         </state>
       </provider>
@@ -435,9 +496,14 @@
         <state relative-caret-position="2268">
           <caret line="129" selection-start-line="129" selection-end-line="129" />
           <folding>
-            <element signature="e#760#2692#0" />
-            <element signature="e#2754#3307#0" />
-            <element signature="e#7688#8234#0" />
+            <element signature="e#769#2701#0" />
+            <element signature="e#2763#3316#0" />
+            <element signature="e#3382#3936#0" />
+            <element signature="e#3979#4085#0" />
+            <element signature="e#4940#5506#0" />
+            <element signature="e#5583#6924#0" />
+            <element signature="e#5688#6742#0" />
+            <element signature="e#12450#13340#0" />
           </folding>
         </state>
       </provider>
@@ -540,57 +606,67 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/eventsPage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="417">
-          <caret line="67" column="53" selection-start-line="67" selection-start-column="53" selection-end-line="67" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/loginPage.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="888">
+        <state relative-caret-position="3438">
           <caret line="191" column="43" selection-start-line="191" selection-start-column="43" selection-end-line="191" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/notificationPage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="467">
-          <caret line="67" column="53" selection-start-line="67" selection-start-column="53" selection-end-line="67" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/projectsPage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="67" column="53" selection-start-line="67" selection-start-column="53" selection-end-line="67" selection-end-column="53" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/stocksPage.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
+        <state relative-caret-position="1206">
           <caret line="67" column="53" selection-start-line="67" selection-start-column="53" selection-end-line="67" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="20" column="44" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
-          <folding>
-            <element signature="e#760#2692#0" />
-            <element signature="e#2754#3307#0" />
-            <element signature="e#7688#8234#0" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/newsPage.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="62" column="65" lean-forward="true" selection-start-line="62" selection-start-column="65" selection-end-line="62" selection-end-column="65" />
+        <state relative-caret-position="348">
+          <caret line="79" column="50" selection-start-line="79" selection-start-column="50" selection-end-line="79" selection-end-column="50" />
+          <folding>
+            <element signature="e#2501#2508#1#HTML" expanded="true" />
+            <element signature="e#2895#2902#1#HTML" expanded="true" />
+            <element signature="e#7144#7151#1#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/projectsPage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="121" selection-start-line="121" selection-end-line="146" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/eventsPage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1165">
+          <caret line="67" column="53" selection-start-line="67" selection-start-column="53" selection-end-line="67" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/notificationPage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="755">
+          <caret line="135" column="108" selection-start-line="135" selection-start-column="108" selection-end-line="135" selection-end-column="108" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="6" column="33" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
+          <folding>
+            <element signature="e#769#2701#0" />
+            <element signature="e#2763#3316#0" />
+            <element signature="e#3382#3936#0" />
+            <element signature="e#3979#4085#0" />
+            <element signature="e#4940#5506#0" />
+            <element signature="e#5583#6924#0" />
+            <element signature="e#5688#6742#0" />
+            <element signature="e#12450#13340#0" />
+          </folding>
         </state>
       </provider>
     </entry>

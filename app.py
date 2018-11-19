@@ -4,7 +4,7 @@ import requests, json, jalali, datetime, os
 
 app = Flask(__name__, static_url_path='/static')
 app.secret_key = '@#$%ffsadf#f qfq$#q'
-BASE_URL = "http://moallemcalendar.ir:8080"
+BASE_URL = "http://mcalendar:8080"
 UPLOAD_FOLDER = '/Users/hamed/Desktop'
 ALLOWED_EXTENSIONS = {'png', 'jpg', 'jpeg'}
 
@@ -107,7 +107,17 @@ def logout():
 @app.route('/notification')
 def notification():
     if session.get('logged_in', None):
-        return render_template('notificationPage.html')
+        r = requests.get(BASE_URL + "/admin/notification/all", headers={"Authorization": session['logged_in']})
+        result = json.loads(r.text)
+
+        if result['status'] == 'ok':
+            if result['data']['notifications']:
+                return render_template('notificationPage.html', data=result['data']['notifications'])
+            else:
+                return render_template('notificationPage.html')
+
+        flash("fail")
+        return redirect(url_for('notification'))
     return render_template('loginPage.html')
 
 
@@ -116,7 +126,18 @@ def submit_notification():
     if session.get('logged_in', None):
         if request.method == "POST":
             try:
-                text = request.form['txt']
+                title = request.form['title']
+                body = request.form['txt']
+
+                r = requests.post(BASE_URL + "/admin/notification/push",
+                                  data={'title': title, 'body': body},
+                                  headers={"Authorization": session['logged_in']})
+
+                result = json.loads(r.text)
+
+                if result['status'] == 'ok':
+                    flash('success')
+                    return redirect(url_for('notification'))
             except Exception as err:
                 pass  # failed
 
@@ -127,8 +148,19 @@ def submit_notification():
 @app.route('/remove/notification/<id>')
 def remove_notification(id):
     if session.get('logged_in', None):
-        # we should remove that
+        try:
+            r = requests.post(BASE_URL + "/admin/notification/delete",
+                              data={'notification_id': id},
+                              headers={"Authorization": session['logged_in']})
+            result = json.loads(r.text)
 
+            if result['status'] == 'ok':
+                flash('success')
+                return redirect(url_for('notification'))
+        except:
+            pass
+
+        flash('fail')
         return redirect(url_for('notification'))
     return render_template('loginPage.html')
 

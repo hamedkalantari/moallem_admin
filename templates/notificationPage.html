@@ -99,6 +99,10 @@
             <br/><br/><br/>
             <form action="{{ url_for('submit_notification') }}" method="post">
                 <div class="form-group">
+                    <label for="Title" class=" float-right text-bold">عنوان نوتیفیکیشن :</label>
+                    <input name="title" type="text" class="form-control" id="Title" placeholder="عنوان">
+                </div>
+                <div class="form-group">
                     <label for="newsContent" class="float-right text-bold">متن نوتیفیکیشن :</label>
                     <textarea name="txt" class="form-control" id="newsContent" rows="10"
                               placeholder="مثلا: بروزرسانی جدید نرم افزار منتشر شده است..."></textarea>
@@ -115,17 +119,32 @@
                 <h3 class="float-right" style="font-family: iranyekan;font-weight: bold">تاریخچه نوتیفیکیشن ها</h3>
             </div>
             <div class="list-group">
-                <div class=" list-group-item list-group-item-action flex-column align-items-start ">
 
-                    <p class="mb-1 text-right">متن طولانی نوتیفیکیشن ارسالی اینجا قرار میگیره و بصورت کامل نمایش داده
-                        میشه
-                        همینجا.</p>
+                {% if data %}
+                    {% for p in data %}
+                        <div class=" list-group-item list-group-item-action flex-column align-items-start ">
+                            <div class="d-flex w-100 justify-content-between">
+                                <div class="d-flex justify-content-start align-content-center">
 
-                    <a class="btn-danger btn mt-2" href="{{ url_for('remove_notification', id='123') }}">حذف از تاریخچه
-                        <img src="/static/css/img/removeIcon.png"
-                             style="height: 15px"></a>
+                                    <h5 class="mr-3 mt-auto mb-auto" style="font-weight: bold">{{ p['title'] }}</h5>
+                                </div>
 
-                </div>
+
+                            </div>
+                            <p class="mb-1 text-right">{{ p['body'] }}</p>
+
+                            <a class="btn-danger btn mt-2" href="{{ url_for('remove_notification', id=p['_id']) }}">حذف از
+                                تاریخچه
+                                <img src="/static/css/img/removeIcon.png"
+                                     style="height: 15px"></a>
+                        </div>
+                    {% endfor %}
+                {% else %}
+                    <div class=" list-group-item list-group-item-action flex-column align-items-start ">هنوز پروژه ای
+                        تعریف نشده است
+                    </div>
+                {% endif %}
+
             </div>
         </div>
     </div>
