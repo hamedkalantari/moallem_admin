@@ -387,7 +387,7 @@ def submit_new_stock():
                 result = json.loads(r.text)
                 if result['data']['indicators']:
                     for i in result['data']['indicators']:
-                        if i['id'] >= id:
+                        if int(i['id']) >= id:
                             id += 1
 
                 r = requests.post(BASE_URL + "/admin/indicator/add",
